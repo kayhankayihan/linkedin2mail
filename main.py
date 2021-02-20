@@ -24,7 +24,7 @@ def get_options():
 
     (options, args) = parser.parse_args()
     if not options.emailformat:
-        parser.error("Please enter the email format! example : -e hotmail.com, gmail.com etc.")
+        parser.error("Please enter the email format! example : -e hotmail.com, gmail.com etc.\nFull Example: python main.py -e hotmail.com -k google -s .")
     if not options.keyword:
         parser.error("Please enter company keyword to search! example : -k facebook, google")
     if not options.seperator:
