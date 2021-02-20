@@ -48,8 +48,6 @@ def main():
     # Authenticate using any Linkedin account credentials
     api = Linkedin(email, password)
     people = api.search_people(keyword_company=keyword)
-    print(people)
-    exit()
     results = []
 
     for person in people:
